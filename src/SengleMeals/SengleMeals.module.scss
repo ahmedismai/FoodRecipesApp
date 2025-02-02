@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Pacifico&display=swap');
+$pacifico-regular: "Pacifico", serif;
+$inconsolata: "Cedarville Cursive", serif;
+$breakpoint-tablet: 1025px;
+
+.section {
+    padding-bottom: 20px;
+    .container {
+        
+        
+            .text {
+                font-size: 48px ; 
+                line-height: 48px;
+                font-weight: 600;
+                font-family:$pacifico-regular ;
+                padding: 20px;
+            }
+            .item{
+                
+                .contant {
+                    font-family:$inconsolata ;
+                        .images{
+                            
+                            .image{
+                                width: 90%;
+                                border-radius: 20px;
+                                margin: auto;
+                                margin-left: 20px;
+                            }
+                        }
+                        p{
+                            
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 600;
+                            padding-top: 10px;
+                        }
+                        
+                .ingredientsContainer{
+                    background-color: white;
+                    border-radius: 20px;
+                    padding: 20px;
+                    
+                    
+                    .ingredientsTitle{
+                        font-size: 24px;
+                        list-style: 32px;
+                        font-weight: 600;
+                        padding-bottom: 20px;
+                        border-bottom: 5px solid #E5E7EB;
+                        
+                    }
+                    .flex{
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #E5E7EB;
+                        margin-bottom: 10px;
+                        padding-block: 5px;
+                        .ingredient{
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 400;
+                            
+                        }
+                        .measure{
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-weight: 400;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+.images{
+    text-align: center;
+    button{
+        margin: 10px;
+    }
+    .youtube{
+        padding: 8px 15px;
+        background-color: #DC2626;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin-top: 20px;
+        
+        a{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            
+        }
+    }
+    .source{
+        padding: 8px 15px;
+        background-color: #21BA75;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        margin-top: 20px;
+        a{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            text-decoration: none;
+            color: white;
+            padding: 5px;
+            
+        }
+        
+    }
+}
+@media (min-width:1025px)and (max-width:1158px) {
+    .button{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+    }
+    
+}
+@media (min-width: $breakpoint-tablet) {
+    .contant{
+      display: grid;
+      grid-template-columns: 33% 30% 33%;
+      gap: 2%;
+    }
+  }

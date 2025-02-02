@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Pacifico&display=swap");
+* {
+  font-family: "Inconsolata", serif;
+  padding: 0;
+  margin: 0;
+}
+
+.active {
+  background-color: black !important;
+  color: white !important;
+}
+.error {
+  text-align: center;
+  font-size: 50px;
+}
