@@ -15,6 +15,9 @@ $breakpoint-tablet: 1025px;
                 font-family:$pacifico-regular ;
                 padding: 20px;
             }
+            @media (max-width:668px) {
+                padding: 30px 10px;
+            }
             .item{
                 
                 .contant {
@@ -27,6 +30,9 @@ $breakpoint-tablet: 1025px;
                                 margin: auto;
                                 margin-left: 20px;
                             }
+                            @media (max-width:668px) {
+                                margin-left: -20px;
+                            }
                         }
                         p{
                             
@@ -34,6 +40,12 @@ $breakpoint-tablet: 1025px;
                             line-height: 24px;
                             font-weight: 600;
                             padding-top: 10px;
+                        }
+                        @media (max-width:992px) {
+                            p{
+                                padding: 20px 20px;
+                               
+                            }
                         }
                         
                 .ingredientsContainer{
@@ -80,6 +92,9 @@ $breakpoint-tablet: 1025px;
     text-align: center;
     button{
         margin: 10px;
+    }
+    button:hover{
+        scale: 105%;
     }
     .youtube{
         padding: 8px 15px;
