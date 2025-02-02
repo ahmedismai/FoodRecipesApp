@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Pacifico&display=swap');
     $inconsolata: "Cedarville Cursive", serif;
-
+    
 .Footer{
     background-color: #fff;
     z-index: 9999;
@@ -11,12 +11,15 @@
     font-family: $inconsolata;
     .container{
         padding:0 70px;
+        
         .contant{
             display: flex;
             padding-bottom: 50px;
             justify-content: space-between;
+            flex-wrap: wrap;
             align-items: center;
             border-bottom: 3px solid #EBEDF0;
+
             .image{
                 display: flex;
                 justify-content: space-between;
@@ -65,4 +68,37 @@
             }
         }
     }
+}
+@media (max-width:468px) {
+    .contant{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .image{
+            position: relative;
+            left: -80%;
+        }
+        .fonts{
+            position: relative;
+            left: -140%;
+            top: 20px;
+        }
+    }
+    .p1{
+        margin-left: -10px;
+        padding: 0;
+        .copyright{
+            font-size: 12px;
+            a{
+                font-size: 12px;
+                
+            }
+            span{
+                font-size: 12px;
+                padding: 0;
+            }
+    
+        }
+    }
+    
 }

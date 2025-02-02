@@ -25,9 +25,11 @@ export default function Footer() {
                         </span>
                     </div>
                 </div>
+                <div className={style.p1}>
                 <p class={style.copyright}>
                     <a href="https://www.facebook.com/profile.php?id=100015580123329"><span>&copy;</span>2025 Ahmed Ismail™</a> 
-                     .All Rights Reserved.</p>
+                     <span className=''>.All Rights Reserved.</span></p>
+                </div>
                 
             </div>
         </section>
