@@ -150,7 +150,7 @@ function handleCategoryChange(event) {
                     <li><NavLink to='/' className={style.bg}>All</NavLink></li>
                     {products?.map((product) => (
                         <li key={product.idCategory}>
-                            <NavLink className={style.hover} to={`/category/${product.strCategory}`} className={style.bg}>
+                            <NavLink className={`${style.hover } ${style.bg}`} to={`/category/${product.strCategory}`}>
                                 {product.strCategory}
                             </NavLink>
                         </li>
